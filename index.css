@@ -1,0 +1,45 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.MainContainer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    padding-top: 0px;
+    color: white;
+}
+
+.TopNavContainer{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+.TitleContainer{
+    margin-left: auto;
+    margin-right: auto;
+     background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),  /* overlay color */
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("Screenshot 2025-12-15 223313.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.TitleImage{
+    width:25% ;
+    height:auto ;
+    padding: 10px;
+}
+
+.BodyContainer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
