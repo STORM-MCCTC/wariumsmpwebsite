@@ -1,0 +1,140 @@
+/* root contains colors for use in other stylings, please use only this colors, if another color is needed, add it here */
+:root {
+    --main-bg: rgb(24, 24, 24);
+    --secondary-bg: rgb(51, 51, 51);
+    --triary-bg: rgb(19, 19, 19);
+    --secondary-bg-hover: rgb(70, 70, 70);
+    --text-color: white;
+}
+
+/* general body styling, mainly for background color and padding */
+body{
+    padding: 10px;
+    padding-top: 5px;
+    margin: 0px;
+    background-color: var(--triary-bg);
+}
+
+/* Main Container for overall page styling */
+.MainContainer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-bg);
+    padding: 20px;
+    padding-top: 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Top Navigation Container for the top navigation bar */
+.TopNavContainer{
+    background-color: var(--main-bg);
+    color: white;
+    padding-top: 15px;
+}
+
+/* Title Container for the title section with background image */
+.TitleContainer{
+    margin-left: auto;
+    margin-right: auto;
+     background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),  /* overlay color */
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/map.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+/* Title Image for the logo image */
+.TitleImage{
+    width:25% ;
+    height:auto ;
+    padding: 10px;
+}
+
+/* Body Container for the main content area */
+.BodyContainer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-bg);
+    color: white;
+}
+
+/* Top Button styling for navigation buttons */
+.TopButton{
+    background-color: var(--secondary-bg);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Top Button hover effect */
+.TopButton:hover{
+    background-color: var(--secondary-bg-hover);
+    cursor: pointer;
+}
+
+/* Container holding all nation cards */
+.NationCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Individual Nation Card */
+.NationCard {
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text-color);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover effect for cards */
+.NationCard:hover {
+    background-color: var(--secondary-bg-hover);
+    transform: translateY(-4px);
+}
+
+/* Nation shorthand (EF, USSR, etc.) */
+.NationShortHand {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Full nation name */
+.NationFullName {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* Nation image */
+.NationCardImage {
+    width: 100%;
+    height: 160px;
+    object-fit: contain; /* shows whole image */
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 8px;
+}
+
+/* Nation description */
+.NationDescription {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+}

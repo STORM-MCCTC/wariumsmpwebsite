@@ -1,23 +1,84 @@
+<!--! this index.html, we may want to switch to a redirect from index.html to home.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Warium SMP</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
+    <!-- Main Container, this we are using mainly for spacing and styling -->
     <div class="MainContainer">
+        <!-- Top Navigation Container buttons for navigation on the website -->
         <div class="TopNavContainer">
-            <button>Home</button>
-            <button>About</button>
-            <button>BlueMap</button>
+            <!-- Navigation buttons, "showAlert()" are to be replaced with actual navigation functions-->
+            <button class="TopButton" onclick="LinkHomepage()">Home</button>
+            <button class="TopButton" onclick="LinkAbout()">About</button>
+            <button class="TopButton" onclick="LinkBluemap()">BlueMap</button>
+            <button class="TopButton" onclick="LinkDiscord()">Discord</button>
         </div>
-        <div Class="TitleContainer">
-            <img class="TitleImage" src="image.png">
+        <!-- Title Container container for title, map image in the background is set in /css/index.css -->
+        <div class="TitleContainer">
+            <img class="TitleImage" src="images/logo.png" alt="Warium SMP">
         </div>
+        <!-- Body Container for the main content of each page -->
         <div class="BodyContainer">
-            <p>Body</p>
+            <div>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorwm ipswum dowor siwt amewt.</p>
+            <p>Woof Woof arf arf :3c</p>
+            <p>There nothing here yet so im putting random stuff</p>
+            <p>Arf Arf, pwease pet me &gtW&lt</p>
+            </div>
+            <!-- Nation Cards Container for the nation cards displayed on the homepage -->
+            <div class="NationCardsContainer">
+                <div class="NationCard">
+                    <h2 class="NationShortHand">EURO</h2>
+                    <p class="NationFullName">European Federation</p>
+                    <img class="NationCardImage" src="images/cardimages/EF.png" alt="European Federation">
+                    <p class="NationDescription">
+                        A unified Western European federation formed from the former nations of the United Kingdom, France, Spain, Portugal, Italy, Germany, Switzerland, and parts of Austria.
+                    </p>
+                </div>
+                <div class="NationCard">
+                    <h2 class="NationShortHand">USSR</h2>
+                    <p class="NationFullName">Union of Soviet Socialist Republics</p>
+                    <img class="NationCardImage" src="images/cardimages/USSR.png" alt="USSR">
+                    <p class="NationDescription">
+                        A centralized Eastern European communist union consisting of Western Russia, Ukraine, Belarus, Latvia, Lithuania, Estonia, Moldova, and Georgia.
+                    </p>
+                </div>
+
+                <div class="NationCard">
+                    <h2 class="NationShortHand">CESR</h2>
+                    <p class="NationFullName">Central European Socialist Republics</p>
+                    <img class="NationCardImage" src="images/cardimages/CESR.svg" alt="CESR">
+                    <p class="NationDescription">
+                        A socialist alliance of Central European states, formed as a political and economic counterbalance between Western Europe and the Soviet bloc.
+                    </p>
+                </div>
+
+                <div class="NationCard">
+                    <h2 class="NationShortHand">IL</h2>
+                    <p class="NationFullName">Republic of Iceland</p>
+                    <img class="NationCardImage" src="images/cardimages/Iceland.svg" alt="Iceland">
+                    <p class="NationDescription">
+                        A small but strategically important North Atlantic republic, known for its isolation and strong maritime presence.
+                    </p>
+                </div>
+
+                <div class="NationCard">
+                    <h2 class="NationShortHand">CAN</h2>
+                    <p class="NationFullName">Republic of Canada</p>
+                    <img class="NationCardImage" src="images/cardimages/Canada.svg" alt="Canada">
+                    <p class="NationDescription">
+                        A vast North American republic with abundant natural resources, and close economic ties to both Europe and the Atlantic world.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
